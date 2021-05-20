@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Loader, Table } from 'semantic-ui-react';
+import { Icon, Loader, Table } from 'semantic-ui-react';
 
 interface Props {
   isLoading: boolean;
@@ -10,7 +10,10 @@ const ItemList: FC<Props> = ({ isLoading }) => {
   return (
     <div className="list-all-items">
       <div className="title">
-        <h5>List of Items</h5>
+        <h5>
+          <Icon name="list" />
+          List of Items
+        </h5>
       </div>
       <div className="list-item-body">
         {isLoading ? (

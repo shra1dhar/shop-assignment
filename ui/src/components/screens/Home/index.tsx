@@ -1,6 +1,7 @@
 import React from 'react';
 import Inventory from './Inventory';
 import { Tab } from 'semantic-ui-react';
+import Calculator from './Calculator';
 
 const Home = () => {
   const panes = [
@@ -12,7 +13,14 @@ const Home = () => {
         </Tab.Pane>
       )
     },
-    { menuItem: 'Calculate', render: () => <Tab.Pane>Calculate</Tab.Pane> },
+    {
+      menuItem: 'Calculate',
+      render: () => (
+        <Tab.Pane>
+          <Calculator />
+        </Tab.Pane>
+      )
+    },
     { menuItem: 'Orders', render: () => <Tab.Pane loading>Orders</Tab.Pane> }
   ];
   return <Tab panes={panes} />;
