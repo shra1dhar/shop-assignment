@@ -1,0 +1,38 @@
+.add-new-item {
+  .new-item-body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: no-wrap;
+    align-items: center;
+    div {
+      margin: 10px;
+    }
+    .count-wrap {
+      display: flex;
+      justify-content: center;
+      flex-wrap: no-wrap;
+      align-items: center;
+    }
+  }
+}
+
+.list-all-items {
+  min-height: 300px;
+  margin-top: 20px;
+  .list-item-body {
+    padding: 20px 50px;
+  }
+}
+
+.add-new-item,
+.list-all-items {
+  text-align: left;
+  border: 1px solid #eee;
+  box-shadow: 6px 3px 5px 0px rgba(50, 50, 50, 0.29);
+  .title {
+    h5 {
+      text-align: left;
+      padding: 10px;
+    }
+  }
+}
