@@ -53,12 +53,12 @@ const AddItem: FC<Props> = ({ setToken }) => {
       </div>
       <div className="new-item-body">
         <div className="count-wrap">
-          Cost:
-          <NumberPicker onChange={(e) => updateCost(e.target.value)} hasCurrency value={cost} />
-        </div>
-        <div className="count-wrap">
           Count:
           <NumberPicker onChange={(e) => updateCount(e.target.value)} placeholder="Count" value={count} />
+        </div>
+        <div className="count-wrap">
+          Cost:
+          <NumberPicker onChange={(e) => updateCost(e.target.value)} hasCurrency value={cost} />
         </div>
         <div>
           <Button type="submit" size="tiny" color="blue">

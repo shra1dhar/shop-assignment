@@ -17,6 +17,6 @@ func main() {
 
 	r.GET("/pens", handlers.GetAllPens)
 	r.POST("/pen", handlers.CreatePen)
-
+	r.GET("/purchase/:amount", handlers.PurchasePens)
 	log.Fatal(r.Run(":8090"))
 }
