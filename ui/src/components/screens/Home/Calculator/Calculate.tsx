@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Form, Header, Icon, Segment } from 'semantic-ui-react';
+import { Button, Header, Icon, Segment } from 'semantic-ui-react';
 import NumberPicker from '../../../modules/NumberPicker';
 
 const Calculate = () => {

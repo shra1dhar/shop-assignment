@@ -20,8 +20,7 @@ const Home = () => {
           <Calculator />
         </Tab.Pane>
       )
-    },
-    { menuItem: 'Orders', render: () => <Tab.Pane loading>Orders</Tab.Pane> }
+    }
   ];
   return <Tab panes={panes} />;
 };
