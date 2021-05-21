@@ -11,4 +11,4 @@ UI and Backend contain frontnend and backend logic respectively
 
 ## Project Demo
 
-![Gif Demo]("https://github.com/shra1dhar/shop-assignment/blob/5703a7e89a78e4d329a117cce8bae6b139a36949/assets/gif_demo.gif")
+<img src="https://github.com/shra1dhar/shop-assignment/blob/development/assets/gif_demo.gif?raw=true" width="" alt=""/>
