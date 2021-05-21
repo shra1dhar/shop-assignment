@@ -41,18 +41,19 @@ const Calculate = () => {
           </Button>
         </div>
         <div>
-          {isFetched && transaction.length === 0 ? (
-            <p>No pens could be retrieved</p>
-          ) : (
-            <>
-              <p>Change Left: Rs. {changeLeft}</p>
-              {transaction.map((val) => (
-                <p key={val.id}>
-                  You got {val.count} pens for cost Rs. {val.cost}
-                </p>
-              ))}
-            </>
-          )}
+          {isFetched &&
+            (transaction.length === 0 ? (
+              <p>No pens could be retrieved</p>
+            ) : (
+              <>
+                <p>Change Left: Rs. {changeLeft}</p>
+                {transaction.map((val) => (
+                  <p key={val.id}>
+                    You got {val.count} pens for cost Rs. {val.cost}
+                  </p>
+                ))}
+              </>
+            ))}
         </div>
       </Form>
     </Segment>

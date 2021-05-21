@@ -39,7 +39,8 @@ func PurchasePens(c *gin.Context) {
 	app.DB.Order("cost").Find(&pens)
 	penList, cartList, changeLeft, _ := model.CalculateOrder(pens, amount)
 	for _, pen := range penList {
-		app.DB.Model(&pen).Select("count", "cost").Updates(model.Pen{Count: pen.Count, Cost: pen.Cost})
+		log.Printf("count: %d, cost: %f", pen.Count, pen.Cost)
+		app.DB.Model(&pen).Select("count").Where("id = ?", pen.ID).Update("count", pen.Count)
 	}
 
 	c.JSON(http.StatusOK, gin.H{
