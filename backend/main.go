@@ -16,7 +16,7 @@ func main() {
 	r := gin.Default()
 
 	r.GET("/pens", handlers.GetAllPens)
-	r.POST("pen", handlers.AddPen)
+	r.POST("/pen", handlers.CreatePen)
 
 	log.Fatal(r.Run(":8090"))
 }
